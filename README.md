@@ -5,20 +5,17 @@ HOT LAPPERS is a text-based racing game where several cars compete on a track to
 ALGORITHM OF THE GAME
 
 Start the Game:
-1. Define the race track length.
-2. Create cars with different advancing power.
-
+  1. Define the race track length.
+  2. Create cars with different advancing power.
 The Race:
-4. On every turn, the cars move a random distance based on its advance.
-5. Print each cars progress after every turn.
-
+  3. On every turn, the cars move a random distance based on its advance.
+  4. Print each cars progress after every turn.
 The Winner:
-6. Analyze when a car reaches the finish line.
-7. Declare the first car to reach it.
-
+  5. Analyze when a car reaches the finish line.
+  6. Declare the first car to reach it.
 The Podium:
-8. Show the final positions of the cars.
-9. Celebration!
+  7. Show the final positions of the cars.
+  8. Celebration!
 
 CLASSES OF THE GAME
 
