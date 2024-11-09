@@ -47,3 +47,7 @@ Methods:
   - greenFlag(): calls advance() for each car in each turn and determines the winner.
 
 This game demonstrates inheritance and polymorphism by allowing different types of cars to share a common interface (Cars) but have unique behaviors. Each brand (Ferrari, Redbull, McLaren) have their own advance() and pits() implementation, showcasing polymorphic behavior. The Race Track class then leverages polymorphism by calling advance() on each Car without needing to know its brand, highlighting the power of C++ OOP principles in creating flexible and scalable code. This project is an excellent entry point to C++ concepts and helps in building foundational skills in object-oriented programming.  
+
+
+UML Diagram:
+![image](https://github.com/user-attachments/assets/b2979c57-0a23-4970-aea8-2d4289a1675f)
