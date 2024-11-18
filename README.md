@@ -5,12 +5,12 @@ HOT LAPPERS is a text-based racing game where several cars compete on a track to
 ALGORITHM OF THE GAME
 
 - Start the Game:
-  1. Define the race track length.
-  2. Create cars with different advancing power and pit stop.
+  1. Create cars with different advancing power and pit stop time.
+  2. Choose your team for the race.
 - The Race:
-  3. On every turn, the cars move a random distance based on its advance.
-  4. Every car has a random turn to wait for pit stops.
-  5. Print each cars progress after every turn.
+  3. On every turn, the player presses advance, and the cars move a random distance based on its range of advance per turn.
+  4. Every car gets two random turns to wait for pit stops, and has to wait for their own amount of turns.
+  5. Print each cars progress after every turn to show position.
 - The Winner:
   6. Analyze when a car reaches the finish line.
   7. Declare the first car to reach it.
@@ -20,33 +20,54 @@ ALGORITHM OF THE GAME
 
 CLASSES OF THE GAME
 
-1. Cars (Base class):
-- Represents the car with name and position, and a virtual method to advance.
+1. Car (Superclass):
+Attributes:
+- Name
+- Position
+- Pit stop time
 Methods:
   - advance(): for moving forward.
   - position(): return the cars current position.
+  - pitStop: for holding cars in pits.
 2. Ferrari (Derived Class):
-- A team who is not the fastest, but consistent and good strategy.
-- Methods:
-  - advance(): with low units, but consistent and low range.
-  - pits(): low pits stop time.
+Attributes:
+- Name: Ferrari
+- Position
+- Pit stop time
+Methods:
+  - advance(): Advances a random number (between 2-6) per turn.
+  - position(): return the cars current position.
+  - pitStop: Holds in pit stop for a random number of turns (between 2-3).
 3. Red Bull (Derived Class):
-- A team who is fast and consistent.
-- Methods:
-  - advance(): with medium units, and consistent.
-  - pits(): normal pits stop time.
+Attributes:
+- Name: RedBull
+- Position
+- Pit stop time
+Methods:
+  - advance(): Advances a random number (between 3-5) per turn.
+  - position(): return the cars current position.
+  - pitStop: Holds in pit stop for a random number of turns (between 1-3).
 4. McLaren (Derived Class):
-- A type of car that advances fast, but unconsistent.
-- Methods:
-  - advance(): with higher units, but high range.
-  - pits(): slow pits stop time.
-5. Race Track:
-- Manages the track length, initiates the race, and checks the finish line.
-- Methods:
-  - finishLine(): checks if any car reached the finish line.
-  - greenFlag(): calls advance() for each car in each turn and determines the winner.
+Attributes:
+- Name: McLaren
+- Position
+- Pit stop time
+Methods:
+  - advance(): Advances a random number (between 1-7) per turn.
+  - position(): return the cars current position.
+  - pitStop: Holds in pit stop for a random number of turns (between 1-2).
+5. RaceTrack:
+Attributes:
+- Track Length
+- Cars Positions
+- Finish Line
+Methods:
+- greenFlag(): calls advance() for each car in each turn.
+- positions(): returns every cars position.
+- finishLine(): checks if any car reached the finish line and determines the winner.
+  
 
-This game demonstrates inheritance and polymorphism by allowing different types of cars to share a common interface (Cars) but have unique behaviors. Each brand (Ferrari, Redbull, McLaren) have their own advance() and pits() implementation, showcasing polymorphic behavior. The Race Track class then leverages polymorphism by calling advance() on each Car without needing to know its brand, highlighting the power of C++ OOP principles in creating flexible and scalable code. This project is an excellent entry point to C++ concepts and helps in building foundational skills in object-oriented programming.  
+This game demonstrates inheritance and polymorphism by allowing different types of cars to share a common interface (Car) but have unique behaviors. Each brand (Ferrari, Redbull, McLaren) have their own advance() and pitStop() implementation, showcasing polymorphic behavior. The Race Track class then leverages polymorphism by calling advance() on each Car without needing to know its brand, highlighting the power of C++ OOP principles in creating flexible and scalable code. This project is an excellent entry point to C++ concepts and helps in building foundational skills in object-oriented programming.  
 
 
 UML Diagram:
