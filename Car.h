@@ -1,26 +1,22 @@
+#pragma once
 #include <string>
-using namespace std;
-
-#ifndef CAR_H
-#define CAR_H
 
 class Car {
 protected:
-    string team;
+    std::string team;       
     int position;
     int pit_stop_time;
+    bool inPitStop;         
+    int pitStopTurnsRemaining; 
 
 public:
-    Car(string team, int pitStopTime);
-    string getTeam() const;
-    void setTeam(const string &team);
+    Car(std::string team, int pitStopTime); 
+    std::string getTeam() const; 
+    void setTeam(const std::string &team);
     void setPosition(int pos);
     void setPitStopTime(int time);
     int getPosition() const;
     int getPitStopTime() const;
-    string getTeam() const;
     virtual void advance();
     virtual ~Car() {}
 };
-
-#endif
