@@ -11,12 +11,16 @@ protected:
     int pit_stop_time;
 
 public:
-    Car(const string& team_name, int pit_time);
-    virtual ~Car();
-    virtual void advance() = 0;
-    int getPosition() const;
+    Car(string team, int pitStopTime);
     string getTeam() const;
-    virtual void pitStop();
+    void setTeam(const string &team);
+    void setPosition(int pos);
+    void setPitStopTime(int time);
+    int getPosition() const;
+    int getPitStopTime() const;
+    string getTeam() const;
+    virtual void advance();
+    virtual ~Car() {}
 };
 
 #endif
