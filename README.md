@@ -68,9 +68,7 @@ Methods:
 - positions(): returns every cars position.
 - finishLine(): checks if any car reached the finish line and determines the winner.
   
-
-This game demonstrates inheritance and polymorphism by allowing different types of cars to share a common interface (Car) but have unique behaviors. Each brand (Ferrari, Redbull, McLaren) have their own advance() and pitStop() implementation, showcasing polymorphic behavior. The Race Track class then leverages polymorphism by calling advance() on each Car without needing to know its brand, highlighting the power of C++ OOP principles in creating flexible and scalable code. This project is an excellent entry point to C++ concepts and helps in building foundational skills in object-oriented programming.  
-
+HOT LAPPERS is an excellent starting point for learning Object-Oriented Programming (OOP) as it integrates key concepts in a practical, engaging way. It introduces classes to define objects such as Car, RaceTrack, and specific car teams like Ferrari or RedBull, showcasing how to encapsulate data and behavior with attributes (e.g., position, team) and methods (e.g., advance(), addCar()). The use of inheritance is demonstrated by creating subclasses (Ferrari, McLaren, RedBull) that extend the base Car class, allowing specialized behaviors for each team while reusing shared functionality. The program also highlights composition, as the RaceTrack class manages a collection of Car objects, demonstrating how objects can interact. Additionally, it leverages vectors to store and manipulate a dynamic list of cars, introducing students to an essential data structure for handling collections. By combining these OOP principles in a coherent project, the program provides a solid foundation for understanding how to design and implement complex, modular, and scalable systems.
 
 UML Diagram:
 ![image](https://github.com/user-attachments/assets/621e97c2-3f93-4f0d-8064-abbf23214d8d)
