@@ -5,8 +5,8 @@
 
 class Ferrari : public Car {
 public:
-    Ferrari();
-    void advance() override;
+    Ferrari(); 
+    void advance() override; 
 };
 
-#endif 
+#endif
