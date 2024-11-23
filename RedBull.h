@@ -6,7 +6,8 @@
 class RedBull : public Car {
 public:
     RedBull();
-    void advance() override;
+    void advance() override; 
 };
 
 #endif
+
