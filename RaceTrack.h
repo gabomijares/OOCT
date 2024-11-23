@@ -16,10 +16,11 @@ public:
     void addCar(Car *car);     
     void greenFlag();          
     string getChampion() const;
-    void printPositions(); 
-    void moveCars();
-    bool isRaceFinished();
-    ~RaceTrack();               
+    void printPositions();  
+    void moveCars();       
+    bool isRaceFinished(); 
+    ~RaceTrack();           
 };
 
 #endif
+
