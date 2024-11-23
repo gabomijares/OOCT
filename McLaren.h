@@ -6,7 +6,7 @@
 class McLaren : public Car {
 public:
     McLaren();
-    void advance() override;
+    void advance() override; 
 };
 
 #endif
