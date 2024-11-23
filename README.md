@@ -6,10 +6,10 @@ ALGORITHM OF THE GAME
 
 - Start the Game:
   1. Create cars with different advancing power and pit stop time.
-  2. Choose your team for the race.
+  2. Define race track length.
 - The Race:
   3. On every turn, the player presses advance, and the cars move a random distance based on its range of advance per turn.
-  4. Every car gets two random turns to wait for pit stops, and has to wait for their own amount of turns.
+  4. Every car gets random turns to wait for pit stops, and has to wait for their own amount of turns.
   5. Print each cars progress after every turn to show position.
 - The Winner:
   6. Analyze when a car reaches the finish line.
@@ -24,7 +24,9 @@ CLASSES OF THE GAME
 Attributes:
 - Name
 - Position
+- Pit Stop
 - Pit stop time
+- Pit stop turns
 Methods:
   - advance(): for moving forward.
   - position(): return the cars current position.
