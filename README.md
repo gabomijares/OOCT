@@ -73,5 +73,6 @@ This game demonstrates inheritance and polymorphism by allowing different types 
 
 
 UML Diagram:
-![image](https://github.com/user-attachments/assets/eb28ff21-fc87-4534-a0a2-62f0667b4e4a)
+![image](https://github.com/user-attachments/assets/621e97c2-3f93-4f0d-8064-abbf23214d8d)
+
 
